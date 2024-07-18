@@ -1,8 +1,18 @@
-#root
-
-body {
-  font-size: 15px;
-  font-family: "Poppins", sans-serif;
+:root {
+  --dark-green: #4a7c59;
+  --text-color: #2a2a2a;
+  --mint-green: #8fc0a9;
+  --turquoise: #68b0ab;
+  --light-green: #c8d5b9;
+  --cream: #fbfaf4;
+  --light-grey: #f6f6f6;
+  --olive: #788A63;
+  --main-font: "Poppins", sans-serif;
+  --heading-font: "Quicksand", sans-serif;
 
 }
 
+body {
+  font-size: 15px;
+  font-family: var(--main-font);
+}
