@@ -14,5 +14,10 @@
 
 body {
   font-size: 15px;
+}
+h1, h2, h3{
+  font-family: var(--heading-font);
+}
+p, li{
   font-family: var(--main-font);
 }
