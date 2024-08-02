@@ -1,0 +1,27 @@
+input, textarea{
+    border: 1px var(--dark-green) solid;
+    width: 100%;
+    box-sizing: border-box;
+
+}
+input{
+    height: 1.5rem;
+}
+textarea{
+    height:6rem;
+    padding: 0.5rem;
+}
+.olive-gradient{
+    background-image: linear-gradient(to right, #4a7c59 0%, #788A63 100%);
+}
+.contacts{
+    display: flex;
+    align-items: center;
+}
+.contacts h3{
+    margin: 0;
+}
+.line{
+    border-bottom: 1px var(--dark-green) solid;
+    width: 100%;
+}

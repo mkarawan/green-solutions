@@ -1,0 +1,18 @@
+.goals{
+    color: var(--dark-grey);
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+.olive{
+    color: var(--olive);
+    font-family: var(--quicksand);
+    text-align: center;
+
+}
+h3.olive + *{
+    text-align: center;
+
+}
+.sea-color{
+    color: var(--turquoise);
+}

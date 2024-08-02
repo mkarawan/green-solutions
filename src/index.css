@@ -1,3 +1,8 @@
+@font-face {
+  font-family: 'Bubble';
+  src: url('../src/fonts/BubbleboddyNeue-Bold\ Trial.ttf') format('truetype');
+}
+
 :root {
   --dark-green: #4a7c59;
   --text-color: #2a2a2a;
@@ -7,17 +12,25 @@
   --cream: #fbfaf4;
   --light-grey: #f6f6f6;
   --olive: #788A63;
+  --dark-grey: "#2a2a2a";
+  --cream: "#FBFAF4";
   --main-font: "Poppins", sans-serif;
-  --heading-font: "Quicksand", sans-serif;
+  --heading-font: "Bubble", sans-serif;
+  --quicksand: "Quicksand", sans-serif;
 
 }
 
 body {
   font-size: 15px;
+  margin: 0;
 }
 h1, h2, h3{
   font-family: var(--heading-font);
+  color: var(--dark-green);
 }
 p, li{
   font-family: var(--main-font);
+}
+p{
+  line-height: 170%;
 }

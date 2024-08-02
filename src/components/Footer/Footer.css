@@ -1,0 +1,20 @@
+.social-media{
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    
+}
+.social-media > *{
+    padding: 1rem;
+}
+.shortcuts{
+    display: flex;
+    justify-content: space-between;
+    padding:  0 2rem;
+}
+.terms p{
+    text-align: center;
+    padding: 0.5rem 0;
+    
+
+}

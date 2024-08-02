@@ -1,0 +1,38 @@
+.stars{
+    display: flex;
+    padding: 0.3rem 1rem;
+}
+.card{
+    background-color: var(--cream);
+    max-width: 215px;
+    padding: 1rem;
+    border-radius: 30px;
+    font-size: 0.9rem;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+
+}
+.customer-name{
+    color:white;
+    text-align: center;
+    background-color: var(--olive);
+}
+.customer-img{
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 8px var(--cream) solid;
+    margin: 0 auto;
+    display: block;
+}
+.card p{
+    padding: 0 0.5rem 0 1rem ; 
+}
+.stars + *{
+    padding:;
+}
+.testimonials{
+    text-align: center;
+    margin: 0 auto;
+}

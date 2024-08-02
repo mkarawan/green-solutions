@@ -1,4 +1,5 @@
 import React from "react";
+import "./Hero.css";
 
 const Hero: React.FC = () => {
   return (
@@ -8,8 +9,8 @@ const Hero: React.FC = () => {
         At Green Solutions, we help clients adopt sustainable practices and
         minimize environmental impact through our comprehensive services.
       </p>
-      <button>Check us out</button>
-      <button>Contact us</button>
+      <button className="gradient-btn">Check us out</button>
+      <button className="border-btn">Contact us</button>
     </>
   );
 };

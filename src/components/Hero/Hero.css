@@ -1,0 +1,20 @@
+.gradient-btn{
+    font-weight: 500;
+    border: none;
+    color: white;
+    border-radius: 20px;
+    padding: 0.2rem 0.5rem;
+    background-color: #4a7c59;
+    /* background-size: 200% auto; */
+    background-image: linear-gradient(to right, #4a7c59 0%,#8fc0a9 100%)  ;
+
+}
+.border-btn{
+    color: var(--turquoise);
+    font-weight: 600;
+    border-radius: 20px;
+    border-color: var(--turquoise);
+    padding: 0.2rem 0.5rem;
+    border: 2px solid var(--turquoise);
+    background-color: transparent;
+}

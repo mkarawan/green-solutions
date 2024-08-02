@@ -1,0 +1,21 @@
+.steps{
+    background-color: var(--dark-green);
+    margin: 0;
+    padding: 0;
+    color: white;
+    }
+.white-heading{
+    color:white;
+}
+.steps .step h3{
+    color: white;
+}
+.step{
+    text-align: center;
+}
+
+.number{
+    font-family: var(--quicksand);
+    font-size: 0.9rem;
+    font-weight: 700;
+}

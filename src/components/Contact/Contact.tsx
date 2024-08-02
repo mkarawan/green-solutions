@@ -1,32 +1,68 @@
-import React from 'react';
+import React from "react";
+import "./Contact.css";
+import { MdOutlineEmail } from "react-icons/md";
+import { FiPhone } from "react-icons/fi";
+import { FiMapPin } from "react-icons/fi";
+import { IconContext } from "react-icons";
 
 const Contact: React.FC = () => {
-
-return ( 
-<>
-<h2>Contact Green Solutions</h2>
-<p>We're here to answer any questions you may have.</p>
-<div>
-<p>Name</p>
-<input type='text'></input>
-<p>Email</p>
-<input type='email'></input>
-<p>Message</p>
-<textarea placeholder='Enter your message...'></textarea>
-<button type='submit'>Send</button>
-</div>
-<div>
-    <h3>Email</h3>
-    <p>For general inquiries, contact us at:</p>
-    <p>contact@greensolutions.com</p>
-    <h3>Phone</h3>
-    <p>For urgent matters, call us at:</p>
-    <p>+1 (555) 000-0000</p>
-    <h3>Office</h3>
-    <p>456 Great Ave, Melbourne VIC 3000 AU</p>
-</div>
-</>
+  return (
+    <>
+    <section className="contact">
+      <h2>Contact Green Solutions</h2>
+      <p>We're here to answer any questions you may have.</p>
+      <div>
+        <p>Name</p>
+        <input type="text"></input>
+        <p>Email</p>
+        <input type="email"></input>
+        <p>Message</p>
+        <textarea placeholder="Enter your message..."></textarea>
+        <button className="gradient-btn olive-gradient" type="submit">
+          Send
+        </button>
+      </div>
+      <div>
+        <div className="contacts">
+        <IconContext.Provider
+          value={{ color: "var(--dark-green", size: "25px" }}
+        >
+          <div>
+            <MdOutlineEmail />
+          </div>
+        </IconContext.Provider>
+        <h3>Email</h3>
+        </div>
+        <p>For general inquiries, contact us at:</p>
+        <p>contact@greensolutions.com</p>
+        <div className="contacts">
+        <IconContext.Provider
+          value={{ color: "var(--dark-green", size: "25px" }}
+        >
+          <div>
+            <FiPhone />
+          </div>
+        </IconContext.Provider>
+        <h3>Phone</h3>
+        </div>
+        <p>For urgent matters, call us at:</p>
+        <p>+1 (555) 000-0000</p>
+        <div className="contacts">
+        <IconContext.Provider
+          value={{ color: "var(--dark-green", size: "25px" }}
+        >
+          <div>
+            <FiMapPin />
+          </div>
+        </IconContext.Provider>{" "}
+        <h3>Office</h3>
+        </div>
+        <p>456 Great Ave, Melbourne VIC 3000 AU</p>
+      </div>
+      <div className="line"></div>
+      </section>
+    </>
   );
-  };
+};
 
 export default Contact;
