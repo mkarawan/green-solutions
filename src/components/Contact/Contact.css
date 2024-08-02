@@ -5,23 +5,42 @@ input, textarea{
 
 }
 input{
-    height: 1.5rem;
+    height: 2rem;
 }
 textarea{
     height:6rem;
     padding: 0.5rem;
 }
 .olive-gradient{
+    margin: 1rem 0;
     background-image: linear-gradient(to right, #4a7c59 0%, #788A63 100%);
 }
 .contacts{
     display: flex;
     align-items: center;
+    margin-bottom: 1rem;
 }
 .contacts h3{
     margin: 0;
+    font-size: 1.5rem;
+    margin-left: 0.5rem;
 }
 .line{
     border-bottom: 1px var(--dark-green) solid;
     width: 100%;
+    position: absolute;
+    left: 0;
+}
+.contact{
+    padding-top: 2rem;
+}
+.form >p{
+    margin-bottom: 0.2rem;
+}
+.contact-box{
+    margin-bottom: 3rem;
+    margin-top: 2rem;
+}
+.contact-box > p{
+    margin: 0.3rem;
 }

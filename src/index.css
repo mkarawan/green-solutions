@@ -21,16 +21,20 @@
 }
 
 body {
-  font-size: 15px;
-  margin: 0;
+  font-size: 18px;
+  margin: 2rem;
 }
 h1, h2, h3{
   font-family: var(--heading-font);
   color: var(--dark-green);
+  line-height: 140%;
 }
 p, li{
   font-family: var(--main-font);
 }
 p{
-  line-height: 170%;
+  line-height: 180%;
+}
+h2{
+  font-size: 2.2rem;
 }

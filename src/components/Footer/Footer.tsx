@@ -21,28 +21,28 @@ return (
             <IconContext.Provider
           value={{ color: "var(--dark-green", size: "25px" }}
         >
-          <div>
+          <div title='Facebook'>
             <FaFacebookF />
           </div>
         </IconContext.Provider>
         <IconContext.Provider
           value={{ color: "var(--dark-green", size: "25px" }}
         >
-          <div>
+          <div title='Instagram'>
             <FaSquareInstagram />
           </div>
         </IconContext.Provider>
         <IconContext.Provider
           value={{ color: "var(--dark-green", size: "25px" }}
         >
-          <div>
+          <div title='LinkedIn'>
             <FaLinkedinIn />
           </div>
         </IconContext.Provider>
         <IconContext.Provider
           value={{ color: "var(--dark-green", size: "25px" }}
         >
-          <div>
+          <div title='YouTube'>
             <FaYoutube />
           </div>
         </IconContext.Provider>

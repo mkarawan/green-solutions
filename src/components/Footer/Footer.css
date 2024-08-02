@@ -6,15 +6,27 @@
 }
 .social-media > *{
     padding: 1rem;
+    cursor: pointer;
 }
 .shortcuts{
     display: flex;
     justify-content: space-between;
     padding:  0 2rem;
+    flex-wrap: wrap;
+    gap: 0 30px;
+
+}
+.shortcuts p{
+    cursor: pointer;
+    flex: 1 1 auto;
 }
 .terms p{
     text-align: center;
     padding: 0.5rem 0;
-    
-
+    text-decoration: underline;
+    cursor: pointer;
+}
+.terms p:last-child{
+    text-decoration: none;
+    cursor: auto;
 }

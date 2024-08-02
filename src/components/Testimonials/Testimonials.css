@@ -35,4 +35,8 @@
 .testimonials{
     text-align: center;
     margin: 0 auto;
+    padding-bottom: 3rem;
+}
+.testimonial-section{
+    margin-top: 6rem;
 }

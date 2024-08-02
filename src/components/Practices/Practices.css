@@ -3,6 +3,10 @@
     margin: 0;
     padding: 0;
     color: white;
+    margin: -2rem;
+    padding: 4rem 2rem;
+    
+
     }
 .white-heading{
     color:white;
@@ -16,6 +20,6 @@
 
 .number{
     font-family: var(--quicksand);
-    font-size: 0.9rem;
+    font-size: 1.3rem;
     font-weight: 700;
 }

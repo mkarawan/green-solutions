@@ -30,7 +30,7 @@ const About: React.FC = () => {
       </div>
       </section>
       <section>
-        <h2>Transforming the World through Sustainable Solutions</h2>
+        <h2 className="centered-heading">Transforming the World through Sustainable Solutions</h2>
         <div>
             <img></img>
             <h3 className="olive">Environmental Consulting</h3>
@@ -53,7 +53,7 @@ const About: React.FC = () => {
         <h2 className="sea-color">Ecological Education and Training
         </h2>
         <p>At Green Solutions, we organize training and workshops for businesses and schools on sustainable development. Our team helps reduce your carbon footprint and ensure compliance with environmental regulations through various services, promoting eco-friendly practices and environmental responsibility.</p>
-        <button className="gradient-btn">Contact</button>
+        <button className="gradient-btn centered-btn">Contact</button>
     </div>
       </section>
    

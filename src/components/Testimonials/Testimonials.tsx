@@ -6,6 +6,8 @@ import "./Testimonials.css";
 const Testimonials: React.FC = () => {
   return (
     <>
+    <section className="testimonial-section">
+
       <h2 className="sea-color testimonials">Customer testimonials</h2>
       <div>
         <div className="card">
@@ -144,6 +146,8 @@ const Testimonials: React.FC = () => {
           <p className="customer-name">Jessica Brown</p>
         </div>
       </div>
+      </section>
+
     </>
   );
 };
