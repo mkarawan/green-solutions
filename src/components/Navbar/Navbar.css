@@ -1,0 +1,28 @@
+.navigation{
+    display: flex;
+    justify-content: space-around;
+}
+.open{
+    text-align: right;
+    margin-right: 2rem;
+
+}
+.navigation-mobile{
+    text-align: right;
+    height: 100vh;
+    position: fixed;
+    background-color: white;
+    width: 100%;
+}
+.navigation-mobile p {
+    padding: 1rem 0;
+    margin-right: 2rem;
+
+}
+.navbar{
+    margin: -2rem;
+}
+.close{
+    margin-right: 2rem;
+
+}
