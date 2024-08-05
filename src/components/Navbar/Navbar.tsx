@@ -38,20 +38,22 @@ const Navbar: React.FC = () => {
   return (
     <>
       <div className="navbar">
-        <img></img>
+
         {screenWidth >= 768 ? (
           <>
-            <div className="navigation">
-              <p>About Us</p>
-              <p>Features</p>
-              <p>Education</p>
-              <p>Contact</p>
-            </div>
+                <img src={"./gs-logo.svg"}/>
+            <div className="menu-elements">
+              <p onClick={() => setMenuState(false)}><a href="#about">About Us</a></p>
+              <p onClick={() => setMenuState(false)}><a href="#education">Education</a></p>
+              <p onClick={() => setMenuState(false)}><a href="#testimonials">Testimonials</a></p>
+              <p onClick={() => setMenuState(false)}><a href="#contact">Contact</a></p>
+              </div>
           </>
         ) : (
           <>
             {!menuState ? (
               <>
+              <img src={"./gs-logo.svg"}/>
                 <IconContext.Provider
                   value={{ color: "var(--dark-grey", size: "35px" }}
                 >
@@ -70,10 +72,10 @@ const Navbar: React.FC = () => {
                     <CgClose />
                   </div>
                 </IconContext.Provider>
-                  <p>About Us</p>
-                  <p>Features</p>
-                  <p>Education</p>
-                  <p>Contact</p>
+                  <p onClick={() => setMenuState(false)}><a href="#about">About Us</a></p>
+                  <p  onClick={() => setMenuState(false)}><a href="#education">Education</a></p>
+                  <p  onClick={() => setMenuState(false)}><a href="#testimonials">Testimonials</a></p>
+                  <p onClick={() => setMenuState(false)}><a href="#contact">Contact</a></p>
                 </div>
               </>
             )}

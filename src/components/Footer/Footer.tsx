@@ -14,7 +14,7 @@ const Footer: React.FC = () => {
 
 return ( 
     <>
-    <img></img>
+    <img className="big-logo" src='./gs-big-logo.svg'/>
     <div>
         <div >
             <div className='social-media'>

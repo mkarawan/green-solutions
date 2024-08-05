@@ -8,7 +8,7 @@ import { IconContext } from "react-icons";
 const Contact: React.FC = () => {
   return (
     <>
-      <section className="contact">
+      <section id="contact" className="contact">
         <h2>Contact Green Solutions</h2>
         <p>We're here to answer any questions you may have.</p>
         <div className="form">

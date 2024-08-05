@@ -32,3 +32,10 @@
     text-decoration: none;
     cursor: auto;
 }
+.big-logo{
+    max-width: 200px;
+    margin: 0 auto;
+    display: block;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+}

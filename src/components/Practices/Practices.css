@@ -10,7 +10,13 @@
     }
 .white-heading{
     color:white;
+
 }
+.white-heading img{
+    display: inline-block;
+    vertical-align: middle;
+}
+
 .steps .step h3{
     color: white;
 }

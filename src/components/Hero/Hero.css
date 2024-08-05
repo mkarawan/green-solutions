@@ -21,8 +21,9 @@
     background-color: transparent;
 }
 .hero-main{
-    font-size: 2.7rem;
+    font-size: 2.5rem;
     padding-top: 3rem;
+    padding-right: 4rem;
 }
 .buttons{
     display: inline-grid;
@@ -32,4 +33,31 @@
 .hero{
     height: 85vh;
     box-sizing: border-box;
+}
+.shape{
+    max-width: 350px;
+    position: absolute;
+    z-index: -10;
+    top: -205px;
+    left: -90px;
+}
+.shape2{
+    position: absolute;
+    z-index: -10;
+    top:260px;
+    max-width: 400px;
+}
+.cup{
+    max-width: 80px;
+    position: absolute;
+    z-index: -5;
+    top:490px;
+    left: 200px;
+}
+.box{
+    max-width: 100px;
+    position: absolute;
+    z-index: -3;
+    top: 520px;
+    left: 240px;
 }

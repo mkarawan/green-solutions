@@ -1,28 +1,54 @@
-.goals{
-    color: var(--dark-grey);
-    font-weight: 600;
-    font-size: 1.2rem;
+.goals {
+  color: var(--dark-grey);
+  font-weight: 600;
+  font-size: 1.2rem;
 }
-.olive{
-    color: var(--olive);
-    font-family: var(--quicksand);
-    text-align: center;
+.goals-list {
+  list-style: none;
+  padding-left: 0;
+}
+ul.goals-list li {
+  position: relative;
+  padding-left: 40px;
+  margin-bottom: 10px;
+}
+ul.goals-list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 35px;
+  height: 35px;
+  background: url("/public/blue-accent.svg") no-repeat;
+  background-size: cover;
+}
 
+.olive {
+  color: var(--olive);
+  font-family: var(--quicksand);
+  text-align: center;
 }
-h3.olive + *{
-    text-align: center;
-
+h3.olive + * {
+  text-align: center;
 }
-.sea-color{
-    color: var(--turquoise);
+.sea-color {
+  color: var(--turquoise);
 }
-.centered-heading{
-    text-align: center;
+.centered-heading {
+  text-align: center;
 }
-.centered-btn{
-    margin: 0 auto;
-    padding: 0.4rem 2.5rem;
-    display: block;
-    margin-bottom: 4rem;
-    margin-top: 2rem;
+.centered-btn {
+  margin: 0 auto;
+  padding: 0.4rem 2.5rem;
+  display: block;
+  margin-bottom: 4rem;
+  margin-top: 2rem;
+}
+.header-accent {
+  height: 50px;
+}
+.our-mission {
+  display: flex;
+  align-items: center;
 }
