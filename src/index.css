@@ -58,17 +58,17 @@ a{
   }  
 }
 @media (max-width: 900px) and (orientation: landscape) {
- p{
-  font-size: 16px;
- }
+
  body{
   padding-left: 2rem;
-
+  font-size: 14px;
+ }
+ p{
+  font-size: 14px;
  }
 }
 @media (min-width: 425px) { 
   p{
-    font-size: 18px;
   }
 }
 

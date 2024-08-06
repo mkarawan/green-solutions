@@ -5,11 +5,13 @@ const About: React.FC = () => {
   return (
     <>
       <section id="about" className="about">
-        {/* <div> */}
+      
           <div className="our-mission">
             <h2>Our mission</h2>{" "}
             <img className="header-accent" src={"./green-accent.svg"} />
           </div>
+          <div className="layout">
+          <div className="left">
           <p>
             Our goal is to support clients in creating more ecological and
             sustainable solutions that contribute to environmental protection
@@ -30,12 +32,17 @@ const About: React.FC = () => {
               a greener future.
             </li>
           </ul>
+          </div>
+          <div className="right">
           <img className="graphic" src={"./audit.png"} />
+          </div>
+          </div>
+         
+
           <img className="cream-shape" src={'./cream-shape.svg'} />
 
-        {/* </div> */}
       </section>
-      <section>
+      <section className="transforming">
         <h2 className="centered-heading">
           Transforming the World through Sustainable Solutions
         </h2>

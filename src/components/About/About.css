@@ -61,12 +61,52 @@ h3.olive + * {
   top: -530px;
   left: -180px;
 }
-#about{
-  margin-bottom: -250px;
-}
+
 .education-img{
   margin-bottom: 3rem;
 }
 .about{
   padding-top: 3rem;
+  margin-bottom: -250px;
+
+}
+.transforming img{
+  margin: 0 auto;
+  max-width: 300px;
+  display: block;
+}
+@media (min-width: 400px) { 
+
+}
+@media (max-width: 900px) and (orientation: landscape) {
+ 
+  .cream-shape{
+    max-width: 450px;
+    position: relative;
+    z-index: -10;
+    top: -300px;
+  }
+  .layout{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  p{
+    font-size: 14px;
+    padding: 0 3rem;
+  }
+}
+
+@media (max-width: 768px) { 
+}
+
+@media (max-width: 1024px) { 
+}
+
+@media (max-width: 1280px) { 
+}
+
+@media (max-width: 1440px) { 
+}
+
+@media (max-width: 1920px) { 
 }
