@@ -34,6 +34,8 @@ h3.olive + * {
 }
 .sea-color {
   color: var(--turquoise);
+  padding-top: 3rem;
+
 }
 .centered-heading {
   text-align: center;
@@ -42,7 +44,7 @@ h3.olive + * {
   margin: 0 auto;
   padding: 0.4rem 2.5rem;
   display: block;
-  margin-bottom: 4rem;
+  margin-bottom: 1rem;
   margin-top: 2rem;
 }
 .header-accent {
@@ -51,4 +53,20 @@ h3.olive + * {
 .our-mission {
   display: flex;
   align-items: center;
+}
+.cream-shape{
+  max-width: 350px;
+  position: relative;
+  z-index: -10;
+  top: -530px;
+  left: -180px;
+}
+#about{
+  margin-bottom: -250px;
+}
+.education-img{
+  margin-bottom: 3rem;
+}
+.about{
+  padding-top: 3rem;
 }

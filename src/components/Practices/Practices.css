@@ -1,5 +1,8 @@
 .steps{
     background-color: var(--dark-green);
+    background-image: url("/public/bg-leaves.jpg");
+    background-size: cover;
+    background-position: 80%;
     margin: 0;
     padding: 0;
     color: white;
@@ -19,6 +22,8 @@
 
 .steps .step h3{
     color: white;
+    font-size: 1.4rem;
+    padding-right: 3rem;
 }
 .step{
     text-align: center;
@@ -28,4 +33,10 @@
     font-family: var(--quicksand);
     font-size: 1.3rem;
     font-weight: 700;
+}
+
+.step h3 img{
+    display: inline-block;
+    vertical-align: middle;
+    padding-right: 1rem;
 }

@@ -4,8 +4,8 @@ import "./About.css";
 const About: React.FC = () => {
   return (
     <>
-      <section id="about">
-        <div>
+      <section id="about" className="about">
+        {/* <div> */}
           <div className="our-mission">
             <h2>Our mission</h2>{" "}
             <img className="header-accent" src={"./green-accent.svg"} />
@@ -31,7 +31,9 @@ const About: React.FC = () => {
             </li>
           </ul>
           <img className="graphic" src={"./audit.png"} />
-        </div>
+          <img className="cream-shape" src={'./cream-shape.svg'} />
+
+        {/* </div> */}
       </section>
       <section>
         <h2 className="centered-heading">
@@ -74,8 +76,8 @@ const About: React.FC = () => {
             environmental regulations through various services, promoting
             eco-friendly practices and environmental responsibility.
           </p>
-          <button className="gradient-btn centered-btn">Contact</button>
-          <img className="graphic" src={'./education.png'} />
+          <a href="#contact"><button className="gradient-btn centered-btn">Contact</button></a>
+          <img className="graphic education-img" src={'./education.png'} />
 
         </div>
       </section>

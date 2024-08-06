@@ -36,7 +36,39 @@
     text-align: center;
     margin: 0 auto;
     padding-bottom: 3rem;
+    padding-top: 0.5rem;
 }
 .testimonial-section{
     margin-top: 6rem;
+    position: relative;
+
+}
+.bg-grey{
+    width: 100%;
+    background-color: var(--light-grey);
+    position: absolute;
+    /* top: 0; */
+    /* left: 0; */
+    z-index: -100;
+    /* transform: translateX(-50%); */
+    clip-path: ellipse(50% 50% at 50% 100%);
+    /* margin: -2rem; */
+    height: 100vw;
+}
+.carousel{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.dots{
+    margin: 0 auto;
+    /* width: 100%; */
+    display: flex;
+    justify-content: center;
+}
+.dot{
+    margin: -10px;
+}
+.turq{
+    color: var(--turquoise);
 }

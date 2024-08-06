@@ -28,10 +28,12 @@ const Navbar: React.FC = () => {
       document.body.style.overflow = 'hidden';
     } else {
       document.body.style.overflow = 'auto';
+
     }
 
     return () => {
       document.body.style.overflow = 'auto';
+
     };
   }, [menuState]);
 
@@ -41,7 +43,7 @@ const Navbar: React.FC = () => {
 
         {screenWidth >= 768 ? (
           <>
-                <img src={"./gs-logo.svg"}/>
+                <img className="pc-logo" src={"./gs-logo.svg"}/>
             <div className="menu-elements">
               <p onClick={() => setMenuState(false)}><a href="#about">About Us</a></p>
               <p onClick={() => setMenuState(false)}><a href="#education">Education</a></p>
