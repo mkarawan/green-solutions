@@ -11,12 +11,14 @@ const About: React.FC = () => {
             <img className="header-accent" src={"./green-accent.svg"} />
           </div>
           <div className="layout">
-          <div className="left">
+          <div className="1">
           <p>
             Our goal is to support clients in creating more ecological and
             sustainable solutions that contribute to environmental protection
             and improve the quality of life for future generations.
           </p>
+          </div>
+          <div className="2">
           <p className="goals">Main goals:</p>
           <ul className="goals-list">
             <li>
@@ -33,7 +35,7 @@ const About: React.FC = () => {
             </li>
           </ul>
           </div>
-          <div className="right">
+          <div className="3">
           <img className="graphic" src={"./audit.png"} />
           </div>
           </div>
@@ -76,7 +78,9 @@ const About: React.FC = () => {
           <h2 id="education" className="sea-color">
             Ecological Education and Training
           </h2>
-          <p>
+          <div className="layout education-layout">
+            <div>
+            <p>
             At Green Solutions, we organize training and workshops for
             businesses and schools on sustainable development. Our team helps
             reduce your carbon footprint and ensure compliance with
@@ -84,7 +88,11 @@ const About: React.FC = () => {
             eco-friendly practices and environmental responsibility.
           </p>
           <a href="#contact"><button className="gradient-btn centered-btn">Contact</button></a>
+              </div>
+         
           <img className="graphic education-img" src={'./education.png'} />
+          </div>
+        
 
         </div>
       </section>

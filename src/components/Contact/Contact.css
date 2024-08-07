@@ -47,3 +47,41 @@ textarea{
 .contact-box > p{
     margin: 0.3rem;
 }
+@media (min-width: 400px) { 
+
+}
+@media (max-width: 900px) and (orientation: landscape) {
+ 
+.contact-layout{
+    gap: 3rem;
+    margin-bottom: 2rem;
+}
+.contact-box{
+    margin-bottom: 0;
+
+}
+.contact-box h3{
+    font-size: 1.3rem;
+}
+.contacts{
+    margin-bottom: 0;
+}
+textarea{
+    height: 8rem;
+}
+}
+
+@media (max-width: 768px) { 
+}
+
+@media (max-width: 1024px) { 
+}
+
+@media (max-width: 1280px) { 
+}
+
+@media (max-width: 1440px) { 
+}
+
+@media (max-width: 1920px) { 
+}

@@ -18,7 +18,7 @@ const Practices: React.FC = () => {
           protection.
         </p>
         <div>
-        <img className="graphic" src={'./earth.png'} />
+        <img className="graphic earth" src={'./earth.png'} />
         <div className="step">
             <h3><img className="header-accent" src={"./cream-poin.svg"} />
               Step <span className="number">1</span>

@@ -1,120 +1,124 @@
-.gradient-btn{
-    font-weight: 500;
-    font-size: 1rem;
-    border: none;
-    color: white;
-    border-radius: 20px;
-    padding: 0.4rem 2rem;
-    background-color: #4a7c59;
-    /* background-size: 200% auto; */
-    background-image: linear-gradient(to right, #4a7c59 0%,#8fc0a9 100%)  ;
-
+.gradient-btn {
+  font-weight: 500;
+  font-size: 1rem;
+  border: none;
+  color: white;
+  border-radius: 20px;
+  padding: 0.4rem 2rem;
+  background-color: #4a7c59;
+  background-image: linear-gradient(to right, #4a7c59 0%, #8fc0a9 100%);
 }
-.border-btn{
-    font-size: 1rem;
-    color: var(--turquoise);
-    font-weight: 600;
-    border-radius: 30px;
-    border-color: var(--turquoise);
-    padding: 0.4rem 2rem;
-    border: 2px solid var(--turquoise);
-    background-color: transparent;
+.border-btn {
+  font-size: 1rem;
+  color: var(--turquoise);
+  font-weight: 600;
+  border-radius: 30px;
+  border-color: var(--turquoise);
+  padding: 0.4rem 2rem;
+  border: 2px solid var(--turquoise);
+  background-color: transparent;
 }
-.hero-main{
-    font-size: 2.5rem;
-    padding-top: 3rem;
-    padding-right: 4rem;
+.hero-main {
+  font-size: 2.5rem;
+  padding-top: 3rem;
 }
-.buttons{
-    display: inline-grid;
-    gap: 15px;
-    padding-top: 1rem;
+.buttons {
+  display: inline-grid;
+  gap: 15px;
+  padding-top: 1rem;
 }
-.hero{
-    box-sizing: border-box;
-    position: relative;
+.hero {
+  box-sizing: border-box;
+  position: relative;
+}
+.hero p{
+  padding-right: 5rem;
+  margin-top: 0;
 }
 
 .background {
-    background-image: url('/public/1920x10112.svg');
-    background-size: cover;
-    background-position: center;
-    margin: 0;
-    height: 85vh;
-   /* margin: -2rem; */
-   /* margin-top: -4rem; */
+  background-image: url("/public/bg-tr.svg");
+  background-size: cover;
+  background-position: center;
+  margin: 0;
+  height: 85vh;
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  }
-  
-  @media (max-width: 1024px) {
-    .background  {
-      background-image: url('/public/1020x77.svg');
-      background-size: cover;
-      background-position: center;
-    }
-  }
-  
-  @media (max-width: 768px) {
-    .background {
-      background-image: url('/public/768x432.svg');
-      background-size: cover;
-      background-position: center;
-    }
-  }
-  
-  @media (max-width: 480px) {
-    .background  {
-      background-image: url('/public/333.svg');
-      background-size: cover;
-      background-position: center;
-    }
-  }
-  
+  z-index: -100;
+}
 
-
-@media (min-width: 400px) { 
-
+@media (min-width: 400px) {
   .hero p {
     padding-right: 5rem;
   }
-  .hero-main{
+  .hero-main {
     font-size: 3rem;
     padding-top: 4rem;
+    padding-right: 4rem;
+  }
+}
+
+@media (min-width: 480px) {
+  .background {
+    background-image: url("/public/bg-tr.svg");
+    background-size: cover;
+    background-position: center;
   }
 }
 @media (min-width: 560px) and (orientation: landscape) {
-  .background{
+  .background {
     height: 120vh;
-    background-image: url('/public/landscape-bg.svg');
+    background-image: url("/public/landscape-bg.svg");
     background-size: cover;
-
   }
-  .hero-main{
+  .hero-main {
     padding-right: 3rem;
     padding-top: 2rem;
   }
-  .hero p{
+  .hero p {
     padding-right: 11rem;
     font-size: 16px;
   }
+}
+
+@media (min-width: 700px) {
+  .hero{
+    height: 100vh;
   }
-
-
-@media (max-width: 768px) { 
+  .background {
+    background-image: url("/public/bg-tr-mid.svg");
+    background-size: cover;
+    background-position: center;
+  }
+  .hero-main{
+    font-size: 4rem;
+  }
+  .hero p{
+    padding-right: 17rem;
+    padding-bottom: 3rem;
+    line-height: 200%;
+  }
+  .gradient-btn, .border-btn{
+    font-size: 1.5rem;
+  }
 }
 
-@media (max-width: 1024px) { 
+@media (min-width: 1024px) {
+  .background {
+    background-image: url("/public/1020x77.svg");
+    background-size: cover;
+    background-position: center;
+  }
 }
 
-@media (max-width: 1280px) { 
+@media (min-width: 1280px) {
 }
 
-@media (max-width: 1440px) { 
+@media (min-width: 1440px) {
 }
 
-@media (max-width: 1920px) { 
+@media (min-width: 1920px) {
 }

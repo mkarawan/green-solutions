@@ -7,7 +7,7 @@
     padding: 0;
     color: white;
     margin: -2rem;
-    padding: 4rem 2rem;
+    padding: 2rem 2rem;
     
 
     }
@@ -39,4 +39,31 @@
     display: inline-block;
     vertical-align: middle;
     padding-right: 1rem;
+}
+@media (min-width: 400px) { 
+
+}
+@media (max-width: 900px) and (orientation: landscape) {
+ 
+    .earth{
+        margin: 0 auto;
+        display: block;
+    }
+
+
+}
+
+@media (max-width: 768px) { 
+}
+
+@media (max-width: 1024px) { 
+}
+
+@media (max-width: 1280px) { 
+}
+
+@media (max-width: 1440px) { 
+}
+
+@media (max-width: 1920px) { 
 }

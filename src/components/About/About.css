@@ -63,7 +63,7 @@ h3.olive + * {
 }
 
 .education-img{
-  margin-bottom: 3rem;
+  padding-bottom: 3rem;
 }
 .about{
   padding-top: 3rem;
@@ -90,23 +90,45 @@ h3.olive + * {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
-  p{
-    font-size: 14px;
-    padding: 0 3rem;
+  .education-layout{
+    gap: 2rem;
+    margin-bottom: 3rem;
   }
+  .centered-btn{
+    display: inline;
+    margin-top: 0;
+  }
+  .education-img{
+    margin-bottom: 0;
+  }
+
 }
 
-@media (max-width: 768px) { 
+@media (min-width: 700px) { 
+  .about{
+    padding-top: 0;
+  }
+  .goals{
+    font-size: 1.8rem;
+  }
+    /* .layout{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+    .education-layout{
+      gap: 2rem;
+      margin-bottom: 3rem;
+    } */
 }
 
-@media (max-width: 1024px) { 
+@media (min-width: 1024px) { 
 }
 
-@media (max-width: 1280px) { 
+@media (min-width: 1280px) {
 }
 
-@media (max-width: 1440px) { 
+@media (min-width: 1440px) {
 }
 
-@media (max-width: 1920px) { 
+@media (min-width: 1920px) {
 }

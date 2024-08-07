@@ -11,6 +11,7 @@ const Contact: React.FC = () => {
       <section id="contact" className="contact">
         <h2>Contact Green Solutions</h2>
         <p>We're here to answer any questions you may have.</p>
+        <div className="layout contact-layout">
         <div className="form">
           <p>Name</p>
           <input type="text"></input>
@@ -66,6 +67,9 @@ const Contact: React.FC = () => {
           </div>
           <p>456 Great Ave, Melbourne VIC 3000 AU</p>
         </div>
+        </div>
+      
+       
         </div>
         <div className="line"></div>
       </section>

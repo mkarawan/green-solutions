@@ -1,6 +1,6 @@
 @font-face {
-  font-family: 'Bubble';
-  src: url('../src/fonts/BubbleboddyNeue-Bold\ Trial.ttf') format('truetype');
+  font-family: "Bubble";
+  src: url("../src/fonts/BubbleboddyNeue-Bold\ Trial.ttf") format("truetype");
 }
 
 :root {
@@ -11,78 +11,74 @@
   --light-green: #c8d5b9;
   --cream: #fbfaf4;
   --light-grey: #f6f6f6;
-  --olive: #788A63;
+  --olive: #788a63;
   --dark-grey: "#2a2a2a";
   --cream: "#FBFAF4";
   --main-font: "Poppins", sans-serif;
   --heading-font: "Bubble", sans-serif;
   --quicksand: "Quicksand", sans-serif;
-
 }
-html{
+html {
   scroll-behavior: smooth;
 }
-
 
 body {
   font-size: 18px;
   margin: 2rem;
-  
-  
 }
-h1, h2, h3{
+h1,
+h2,
+h3 {
   font-family: var(--heading-font);
   color: var(--dark-green);
   line-height: 140%;
 }
-p, li{
+p,
+li {
   font-family: var(--main-font);
 }
-p{
+p {
   line-height: 180%;
 }
-h2{
+h2 {
   font-size: 2.2rem;
 }
-img.graphic{
+img.graphic {
   max-width: 300px;
   width: 100%;
+  margin: 0 auto;
+  display: block;
 }
-a{
+a {
   text-decoration: none;
 }
 
-@media (max-width: 768px) {
-  body{
-    font-size: 16px;
-  }  
+@media (min-width: 425px) {
 }
-@media (max-width: 900px) and (orientation: landscape) {
 
- body{
-  padding-left: 2rem;
-  font-size: 14px;
- }
- p{
-  font-size: 14px;
- }
-}
-@media (min-width: 425px) { 
-  p{
+@media (min-width: 560px) and (orientation: landscape) {
+  body {
+    font-size: 14px;
   }
 }
 
-@media (max-width: 768px) { 
+@media (min-width: 700px) {
+  p{
+    font-size: 18px;
+  }
+  h2{
+    font-size: 3rem;
+  }
 }
 
-@media (max-width: 1024px) { 
+@media (min-width: 1024px) {
 }
 
-@media (max-width: 1280px) { 
+@media (min-width: 1280px) {
 }
 
-@media (max-width: 1440px) { 
+@media (min-width: 1440px) {
 }
 
-@media (max-width: 1920px) { 
+@media (min-width: 1920px) {
 }
