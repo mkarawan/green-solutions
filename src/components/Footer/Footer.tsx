@@ -13,10 +13,9 @@ import { FaYoutube } from "react-icons/fa";
 const Footer: React.FC = () => {
 
 return ( 
-    <>
+    <section className='footer'>
     <img className="big-logo" src='./gs-big-logo.svg'/>
-    <div>
-        <div >
+   
             <div className='social-media'>
             <IconContext.Provider
           value={{ color: "var(--dark-green", size: "25px" }}
@@ -47,7 +46,6 @@ return (
           </div>
         </IconContext.Provider>
             </div>
-            
             <div className='shortcuts'>
                 <p>About Us</p>
                 <p>Services</p>
@@ -55,16 +53,14 @@ return (
                 <p>FAQ</p>
                 <p>Contact</p>         
             </div>
-            <div className='line'></div>
-        </div>
+            <div className='line line2'></div>
         <div className='terms'>
 <p>Privacy Policy</p>
 <p>Cookie Policy</p>
 <p>Terms and Conditions</p>
 <p>© 2024 Green Solutions. All rights reserved.</p>
         </div>
-    </div>
-    </>
+    </section>
   );
   };
 

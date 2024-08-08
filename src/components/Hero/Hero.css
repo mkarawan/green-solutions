@@ -80,11 +80,10 @@
   }
   .hero p {
     padding-right: 11rem;
-    font-size: 16px;
   }
 }
 
-@media (min-width: 700px) {
+@media (min-width: 700px) and (orientation: portrait) {
   .hero{
     height: 100vh;
   }
@@ -105,8 +104,29 @@
     font-size: 1.5rem;
   }
 }
-
-@media (min-width: 1024px) {
+@media (min-width: 1010px) and (orientation: landscape){
+  .background {
+    background-image: url("/public/1010landscape.svg");
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+  }
+  .hero{
+    height: 92vh;
+  }
+  .hero-main{
+    padding-top: 6rem;
+    max-width: 60%;
+    font-size: 3.7rem;
+  }
+  .hero p{
+max-width: 50%;
+  }
+  .gradient-btn, .border-btn{
+    font-size: 1.4rem;
+  }
+} 
+@media (min-width: 1024px) and (orientation: portrait) {
   .background {
     background-image: url("/public/1020x77.svg");
     background-size: cover;

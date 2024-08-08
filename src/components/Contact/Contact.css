@@ -73,8 +73,17 @@ textarea{
 
 @media (max-width: 768px) { 
 }
+@media (min-width: 1010px) and (orientation: landscape){
+    .contact-layout{
+        gap: 90px;
+      }
+      textarea{
+        height: 12rem;
+      }
+      
+}
 
-@media (max-width: 1024px) { 
+@media (max-width: 1024px)  and (orientation: portrait) { 
 }
 
 @media (max-width: 1280px) { 

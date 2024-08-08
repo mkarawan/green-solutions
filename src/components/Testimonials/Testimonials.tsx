@@ -46,7 +46,7 @@ const Testimonials: React.FC = () => {
         <div className="bg-grey"></div>
         <h2 className="sea-color testimonials">Customer testimonials</h2>
 
-        {screenWidth >= 768 ? (
+        {screenWidth >= 880 ? (
           <div className="testimonials-pc">
             <div className="card">
               <div className="stars">

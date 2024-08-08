@@ -11,14 +11,14 @@ const About: React.FC = () => {
             <img className="header-accent" src={"./green-accent.svg"} />
           </div>
           <div className="layout">
-          <div className="1">
+          <div className="div1">
           <p>
             Our goal is to support clients in creating more ecological and
             sustainable solutions that contribute to environmental protection
             and improve the quality of life for future generations.
           </p>
           </div>
-          <div className="2">
+          <div className="div2">
           <p className="goals">Main goals:</p>
           <ul className="goals-list">
             <li>
@@ -35,8 +35,8 @@ const About: React.FC = () => {
             </li>
           </ul>
           </div>
-          <div className="3">
-          <img className="graphic" src={"./audit.png"} />
+          <div className="div3">
+          <img className="graphic " src={"./audit.png"} />
           </div>
           </div>
          
@@ -48,7 +48,8 @@ const About: React.FC = () => {
         <h2 className="centered-heading">
           Transforming the World through Sustainable Solutions
         </h2>
-        <div>
+        <div className="layout-3col">
+          <div>
           <img className="graphic" src={"./audit2.png"} />
           <h3 className="olive">Environmental Consulting</h3>
           <p>
@@ -71,6 +72,7 @@ const About: React.FC = () => {
             Our renewable energy solutions harness nature's power for clean,
             sustainable energy, creating a greener future.
           </p>
+        </div>
         </div>
       </section>
       <section>

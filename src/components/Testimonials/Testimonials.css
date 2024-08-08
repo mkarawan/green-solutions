@@ -43,6 +43,9 @@
     position: relative;
 
 }
+.testimonials-pc{
+    display: flex;
+}
 .bg-grey{
     width: 100%;
     background-color: var(--light-grey);
