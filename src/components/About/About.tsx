@@ -7,8 +7,8 @@ const About: React.FC = () => {
       <section id="about" className="about">
       
           <div className="our-mission">
-            <h2>Our mission</h2>{" "}
-            <img className="header-accent" src={"./green-accent.svg"} />
+            <h2>Our mission  <img className="header-accent" src={"./green-accent.svg"} /></h2>
+           
           </div>
           <div className="layout">
           <div className="div1">
@@ -36,7 +36,7 @@ const About: React.FC = () => {
           </ul>
           </div>
           <div className="div3">
-          <img className="graphic " src={"./audit.png"} />
+          <img className="graphic " src={"./audit.svg"} />
           </div>
           </div>
          
