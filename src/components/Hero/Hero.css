@@ -72,18 +72,28 @@
 }
 @media (min-width: 560px) and (orientation: landscape) {
   .background {
-    height: 120vh;
     background-image: url("/public/landscape-bg.svg");
     background-size: cover;
+    background-position:  center;
+    height: 120vh;
+    
   }
   .hero-main {
     padding-right: 3rem;
-    padding-top: 2rem;
+    padding-top: 0;
   }
   .hero p {
     padding-right: 11rem;
+    font-size: 16px;
+  }
+  .buttons{
+    display: flex;
+  }
+  .hero{
+    height: 80vh;
   }
 }
+
 
 @media (min-width: 700px) and (orientation: portrait) {
   .hero{
@@ -152,7 +162,7 @@ max-width: 50%;
     margin-left: -4rem;
   }
   .background {
-    background-image: url("/public/big-bg.svg");
+    background-image: url("/public/bg-new.svg");
     background-size: cover;
     background-position: center;
   }

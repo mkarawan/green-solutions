@@ -16,7 +16,6 @@
     }
 .white-heading{
     color:white;
-    text-align: center;
 
 }
 .white-heading img{
@@ -101,8 +100,12 @@
     grid-column: 3 / 4;
     grid-row: 2 / 3;
   }
+  .white-heading{
+    text-align: center;
 
+  }
   } 
+  
   
 @media (min-width: 1024px) { 
 }

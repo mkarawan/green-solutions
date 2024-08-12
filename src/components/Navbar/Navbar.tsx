@@ -25,37 +25,53 @@ const Navbar: React.FC = () => {
 
   useEffect(() => {
     if (menuState) {
-      document.body.style.overflow = 'hidden';
+      document.body.style.overflow = "hidden";
     } else {
-      document.body.style.overflow = 'auto';
-
+      document.body.style.overflow = "auto";
     }
 
     return () => {
-      document.body.style.overflow = 'auto';
-
+      document.body.style.overflow = "auto";
     };
   }, [menuState]);
+  window.addEventListener("scroll", () => {
+    const navbar = document.querySelector(".navbar");
 
+    const scrollPosition = window.scrollY;
+
+    if (scrollPosition >= 80) {
+      navbar?.classList.add("scrolled");
+
+    } else {
+      navbar?.classList.remove("scrolled");
+    }
+  });
   return (
     <>
       <div className="navbar">
-
         {screenWidth >= 768 ? (
           <>
-                <img className="pc-logo" src={"./gs-logo.svg"}/>
+            <img className="pc-logo" src={"./gs-logo.svg"} />
             <div className="menu-elements">
-              <p onClick={() => setMenuState(false)}><a href="#about">About Us</a></p>
-              <p onClick={() => setMenuState(false)}><a href="#education">Education</a></p>
-              <p onClick={() => setMenuState(false)}><a href="#testimonials">Testimonials</a></p>
-              <p onClick={() => setMenuState(false)}><a href="#contact">Contact</a></p>
-              </div>
+              <p onClick={() => setMenuState(false)}>
+                <a href="#about">About Us</a>
+              </p>
+              <p onClick={() => setMenuState(false)}>
+                <a href="#education">Education</a>
+              </p>
+              <p onClick={() => setMenuState(false)}>
+                <a href="#testimonials">Testimonials</a>
+              </p>
+              <p onClick={() => setMenuState(false)}>
+                <a href="#contact">Contact</a>
+              </p>
+            </div>
           </>
         ) : (
           <>
             {!menuState ? (
               <>
-              <img src={"./gs-logo.svg"}/>
+                <img src={"./gs-logo.svg"} />
                 <IconContext.Provider
                   value={{ color: "var(--dark-grey", size: "35px" }}
                 >
@@ -67,17 +83,25 @@ const Navbar: React.FC = () => {
             ) : (
               <>
                 <div className="navigation-mobile">
-                <IconContext.Provider
-                  value={{ color: "var(--dark-grey", size: "35px" }}
-                >
-                  <div className="close" onClick={clickMenu}>
-                    <CgClose />
-                  </div>
-                </IconContext.Provider>
-                  <p onClick={() => setMenuState(false)}><a href="#about">About Us</a></p>
-                  <p  onClick={() => setMenuState(false)}><a href="#education">Education</a></p>
-                  <p  onClick={() => setMenuState(false)}><a href="#testimonials">Testimonials</a></p>
-                  <p onClick={() => setMenuState(false)}><a href="#contact">Contact</a></p>
+                  <IconContext.Provider
+                    value={{ color: "var(--dark-grey", size: "35px" }}
+                  >
+                    <div className="close" onClick={clickMenu}>
+                      <CgClose />
+                    </div>
+                  </IconContext.Provider>
+                  <p onClick={() => setMenuState(false)}>
+                    <a href="#about">About Us</a>
+                  </p>
+                  <p onClick={() => setMenuState(false)}>
+                    <a href="#education">Education</a>
+                  </p>
+                  <p onClick={() => setMenuState(false)}>
+                    <a href="#testimonials">Testimonials</a>
+                  </p>
+                  <p onClick={() => setMenuState(false)}>
+                    <a href="#contact">Contact</a>
+                  </p>
                 </div>
               </>
             )}

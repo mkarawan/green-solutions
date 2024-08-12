@@ -180,7 +180,7 @@ h3.olive + * {
     grid-column: 2 / 3;
     grid-row: 1 / 2;
   }
-
+ 
   
   .graphic {
     width: 80%;
@@ -192,6 +192,10 @@ h3.olive + * {
   }
   .education-img{
     margin-bottom: 0;
+  }
+  .about{
+    margin-top: 3rem;
+
   }
 
 }
@@ -208,6 +212,10 @@ h3.olive + * {
  img.education-img{
   max-width: 400px;
  }
+ .about{
+  margin-top:0; 
+
+}
 } 
 
 @media (min-width: 1024px) and (orientation: portrait) { 
