@@ -75,13 +75,15 @@ const About: React.FC = () => {
         </div>
         </div>
       </section>
-      <section>
+      <section className="edu">
       <div>
+ 
+          <div className="layout education-layout">
           <h2 id="education" className="sea-color">
             Ecological Education and Training
           </h2>
-          <div className="layout education-layout">
             <div>
+         
             <p>
             At Green Solutions, we organize training and workshops for
             businesses and schools on sustainable development. Our team helps

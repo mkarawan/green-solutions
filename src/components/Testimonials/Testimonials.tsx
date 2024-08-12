@@ -43,7 +43,6 @@ const Testimonials: React.FC = () => {
   return (
     <>
       <section id="testimonials" className="testimonial-section">
-        <div className="bg-grey"></div>
         <h2 className="sea-color testimonials">Customer testimonials</h2>
 
         {screenWidth >= 880 ? (

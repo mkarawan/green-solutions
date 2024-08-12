@@ -11,6 +11,9 @@
     
 
     }
+    .earth{
+      max-width: 300px;
+    }
 .white-heading{
     color:white;
     text-align: center;
@@ -109,12 +112,36 @@
 
 @media (min-width: 1440px) { 
   .steps{
+    padding: 6rem 5rem 9rem 5rem;
     width: calc(100vw - 7.5px);
     margin: 0 auto;
     margin-left: calc(-50vw + 50%); 
     box-sizing: border-box;
   }
+  .white-heading{
+    max-width: 900px;
+    margin: 0 auto;
+    padding-bottom: 2rem;
+  }
+  .white-heading + p{
+    max-width: 900px;
+    padding-bottom: 2rem;
+
+  }
+  .steps .step h3, .number{
+    font-size: 2.5rem;
+  }
+  .earth{
+    max-width: 420px;
+  }
 }
 
 @media (min-width: 1920px) { 
+  .steps{
+    padding: 6rem 13rem 9rem 13rem;
+
+  }
+  .steps-layout{
+    padding: 4rem 0;
+  }
 }
