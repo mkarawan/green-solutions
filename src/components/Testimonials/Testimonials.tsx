@@ -47,7 +47,7 @@ const Testimonials: React.FC = () => {
 
         {screenWidth >= 880 ? (
           <div className="testimonials-pc">
-            <div className="card">
+            <div className="card card1">
               <div className="stars">
                 <IconContext.Provider
                   value={{ color: "var(--turquoise)", size: "15px" }}
@@ -92,7 +92,7 @@ const Testimonials: React.FC = () => {
               <img className="customer-img" src={"./michael.jpg"} />
               <p className="customer-name">Michael Smith</p>
             </div>
-            <div className="card">
+            <div className="card card2">
               <div className="stars">
                 <IconContext.Provider
                   value={{ color: "var(--light-green)", size: "15px" }}
@@ -137,7 +137,7 @@ const Testimonials: React.FC = () => {
               <img className="customer-img" src={"./emily.jpg"} />
               <p className="customer-name">Emily Johnson</p>
             </div>
-            <div className="card">
+            <div className="card card3">
               <div className="stars">
                 <IconContext.Provider
                   value={{ color: "var(--mint-green)", size: "15px" }}
@@ -195,7 +195,7 @@ const Testimonials: React.FC = () => {
               </IconContext.Provider>
 
               {cardID == 1 && (
-                <div className="card carousel-card">
+                <div className="card card1 carousel-card">
                   <div className="stars">
                     <IconContext.Provider
                       value={{ color: "var(--turquoise)", size: "15px" }}
@@ -242,7 +242,7 @@ const Testimonials: React.FC = () => {
                 </div>
               )}
               {cardID == 2 && (
-                <div className="card">
+                <div className="card card2">
                   <div className="stars">
                     <IconContext.Provider
                       value={{ color: "var(--light-green)", size: "15px" }}
@@ -289,7 +289,7 @@ const Testimonials: React.FC = () => {
                 </div>
               )}
               {cardID == 3 && (
-                <div className="card">
+                <div className="card card3">
                   <div className="stars">
                     <IconContext.Provider
                       value={{ color: "var(--mint-green)", size: "15px" }}

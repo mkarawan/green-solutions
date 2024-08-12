@@ -6,12 +6,18 @@ import { FiMapPin } from "react-icons/fi";
 import { IconContext } from "react-icons";
 
 const Contact: React.FC = () => {
+  const gridStyle={
+    gridColumn: '2/3'
+  };
   return (
     <>
+
       <section id="contact" className="contact">
+      <div className="contact-bg "></div>
+
         <h2>Contact Green Solutions</h2>
         <p>We're here to answer any questions you may have.</p>
-        <div className="layout contact-layout">
+        <div className=" layout contact-layout">
         <div className="form">
           <p>Name</p>
           <input type="text"></input>
@@ -23,7 +29,7 @@ const Contact: React.FC = () => {
             Submit
           </button>
         </div>
-        <div>
+        <div className="contact-box-layout" style={gridStyle}>
           <div className="contact-box">
           <div className="contacts">
             <IconContext.Provider
@@ -36,7 +42,7 @@ const Contact: React.FC = () => {
             <h3>Email</h3>
           </div>
           <p>For general inquiries, contact us at:</p>
-          <p>contact@greensolutions.com</p>
+          <a href="mailto:contact@greensolutions.com"><p>contact@greensolutions.com</p></a>
           </div>
           <div className="contact-box">
 
