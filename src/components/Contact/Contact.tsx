@@ -57,7 +57,7 @@ const Contact: React.FC = () => {
   };
 
 
-  const {t, i18n} = useTranslation();
+  const {t} = useTranslation();
   const gridStyle={
     gridColumn: '2/3'
   };

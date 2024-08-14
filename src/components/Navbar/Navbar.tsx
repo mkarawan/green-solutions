@@ -9,7 +9,7 @@ const Navbar: React.FC = () => {
   const [screenWidth, setScreenWidth] = useState<number>(window.innerWidth);
   const [menuState, setMenuState] = useState<boolean>(false);
   const [plcolor, setPlColor] = useState<string>("#969696");
-  const [encolor, setEnColor] = useState<string>("var(--text-color)");
+  const [encolor, setEnColor] = useState<string>("var(--te");
 
   const { t, i18n } = useTranslation();
 

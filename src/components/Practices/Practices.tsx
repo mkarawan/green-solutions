@@ -3,7 +3,7 @@ import "./Practices.css";
 import { useTranslation } from "react-i18next";
 
 const Practices: React.FC = () => {
-  const {t, i18n} = useTranslation();
+  const {t} = useTranslation();
   return (
     <>
       <section className="steps">

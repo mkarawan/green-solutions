@@ -8,7 +8,7 @@ import { BsDot } from "react-icons/bs";
 import { useTranslation } from "react-i18next";
 
 const Testimonials: React.FC = () => {
-  const {t, i18n} = useTranslation();
+  const {t} = useTranslation();
   const [screenWidth, setScreenWidth] = useState<number>(window.innerWidth);
   const [cardID, setCardID] = useState<number>(1);
   const dot1 = cardID === 1 ? "var(--turquoise)" : "var(--light-green)";
