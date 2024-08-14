@@ -5,8 +5,10 @@ import "./Testimonials.css";
 import { IoIosArrowBack } from "react-icons/io";
 import { IoIosArrowForward } from "react-icons/io";
 import { BsDot } from "react-icons/bs";
+import { useTranslation } from "react-i18next";
 
 const Testimonials: React.FC = () => {
+  const {t, i18n} = useTranslation();
   const [screenWidth, setScreenWidth] = useState<number>(window.innerWidth);
   const [cardID, setCardID] = useState<number>(1);
   const dot1 = cardID === 1 ? "var(--turquoise)" : "var(--light-green)";
@@ -43,7 +45,7 @@ const Testimonials: React.FC = () => {
   return (
     <>
       <section id="testimonials" className="testimonial-section">
-        <h2 className="sea-color testimonials">Customer testimonials</h2>
+        <h2 className="sea-color testimonials">{t("tes_h")}</h2>
 
         {screenWidth >= 880 ? (
           <div className="testimonials-pc">
@@ -86,8 +88,7 @@ const Testimonials: React.FC = () => {
                 </IconContext.Provider>
               </div>
               <p>
-                Green Solutions transformed our business with their innovative
-                eco-friendly practices. Highly recommend!
+              {t("tes_1")}
               </p>
               <img className="customer-img" src={"./michael.jpg"} />
               <p className="customer-name">Michael Smith</p>
@@ -131,8 +132,7 @@ const Testimonials: React.FC = () => {
                 </IconContext.Provider>
               </div>
               <p>
-                Thanks to Green Solutions, our company is now leading in
-                sustainability and environmental conservation.
+              {t("tes_2")}
               </p>
               <img className="customer-img" src={"./emily.jpg"} />
               <p className="customer-name">Emily Johnson</p>
@@ -176,8 +176,7 @@ const Testimonials: React.FC = () => {
                 </IconContext.Provider>
               </div>
               <p>
-                Excellent service and expert advice from Green Solutions helped
-                us achieve our green goals effortlessly.
+              {t("tes_3")}
               </p>
               <img className="customer-img" src={"./jessica.jpg"} />
               <p className="customer-name">Jessica Brown</p>
@@ -234,8 +233,7 @@ const Testimonials: React.FC = () => {
                     </IconContext.Provider>
                   </div>
                   <p>
-                    Green Solutions transformed our business with their
-                    innovative eco-friendly practices. Highly recommend!
+                  {t("tes_1")}
                   </p>
                   <img className="customer-img" src={"./michael.jpg"} />
                   <p className="customer-name">Michael Smith</p>
@@ -281,8 +279,7 @@ const Testimonials: React.FC = () => {
                     </IconContext.Provider>
                   </div>
                   <p>
-                    Thanks to Green Solutions, our company is now leading in
-                    sustainability and environmental conservation.
+                  {t("tes_2")}
                   </p>
                   <img className="customer-img" src={"./emily.jpg"} />
                   <p className="customer-name">Emily Johnson</p>
@@ -328,8 +325,7 @@ const Testimonials: React.FC = () => {
                     </IconContext.Provider>
                   </div>
                   <p>
-                    Excellent service and expert advice from Green Solutions
-                    helped us achieve our green goals effortlessly.
+                  {t("tes_3")}
                   </p>
                   <img className="customer-img" src={"./jessica.jpg"} />
                   <p className="customer-name">Jessica Brown</p>

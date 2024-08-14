@@ -1,11 +1,63 @@
-import React from "react";
+import React, {useRef, useState} from "react";
 import "./Contact.css";
 import { MdOutlineEmail } from "react-icons/md";
 import { FiPhone } from "react-icons/fi";
 import { FiMapPin } from "react-icons/fi";
 import { IconContext } from "react-icons";
+import { useTranslation } from "react-i18next";
+import emailjs from 'emailjs-com';
+
+interface FormData {
+  name: string;
+  email: string;
+  message: string;
+}
+
 
 const Contact: React.FC = () => {
+  const form = useRef<HTMLFormElement>(null);
+  const [sent, setSent] = useState<boolean>(false);
+  const [error, setError] = useState<string | null>(null);
+  const [name, setName] = useState<string>("");
+  const [email, setEmail] = useState<string>("");
+  const [text, setText] = useState<string>("");
+  const handleNameChange = (e:React.ChangeEvent<HTMLInputElement>) =>{
+    setName(e.target?.value);
+  }  
+  const handleEmailChange = (e:React.ChangeEvent<HTMLInputElement>) =>{
+    setEmail(e.target?.value);
+  }  
+  const handleTextChange = (e:React.ChangeEvent<HTMLTextAreaElement>) =>{
+    setText(e.target?.value);
+  }
+
+
+  const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+
+    if (form.current) {
+      emailjs
+        .sendForm('service_zodenhc', 'template_frbql9i', form.current, 'P-96Pw0kXZFRvCdwO')
+        .then(
+          (result) => {
+            console.log('SUCCESS!', result.text);
+            setSent(true);
+            setError(null);
+            setName("");
+            setEmail("");
+            setText("");
+          },
+          (error) => {
+            console.log('FAILED...', error.text);
+            setError('Wystąpił błąd podczas wysyłania wiadomości.');
+            setSent(false);
+          },
+        );
+    }
+  };
+
+
+  const {t, i18n} = useTranslation();
   const gridStyle={
     gridColumn: '2/3'
   };
@@ -15,19 +67,24 @@ const Contact: React.FC = () => {
       <section id="contact" className="contact">
       <div className="contact-bg "></div>
 
-        <h2>Contact Green Solutions</h2>
-        <p>We're here to answer any questions you may have.</p>
+        <h2>{t("cont_h")}</h2>
+        <p>{t("cont_p")}</p>
         <div className=" layout contact-layout">
         <div className="form">
-          <p>Name</p>
-          <input type="text"></input>
+          <form ref={form} onSubmit={sendEmail}>
+          <p>{t("name")}</p>
+          <input type="text" name="user_name" required value={name} onChange={handleNameChange}></input>
           <p>Email</p>
-          <input type="email"></input>
-          <p>Message</p>
-          <textarea placeholder="Enter your message..."></textarea>
+          <input type="email" name="user_email" required value={email}  onChange={handleEmailChange}></input>
+          <p>{t("mess")}</p>
+          <textarea placeholder={t("placeholder")} name="message" required value={text} onChange={handleTextChange}></textarea>
           <button className="gradient-btn olive-gradient" type="submit">
-            Submit
+          {t("send")}
           </button>
+          </form>
+          {sent && <p>{t("message-sent")}</p>}
+              {error && <p>{error}</p>}
+        
         </div>
         <div className="contact-box-layout" style={gridStyle}>
           <div className="contact-box">
@@ -41,7 +98,7 @@ const Contact: React.FC = () => {
             </IconContext.Provider>
             <h3>Email</h3>
           </div>
-          <p>For general inquiries, contact us at:</p>
+          <p>{t("email_p")}</p>
           <a href="mailto:contact@greensolutions.com"><p>contact@greensolutions.com</p></a>
           </div>
           <div className="contact-box">
@@ -54,9 +111,9 @@ const Contact: React.FC = () => {
                 <FiPhone />
               </div>
             </IconContext.Provider>
-            <h3>Phone</h3>
+            <h3>{t("phone")}</h3>
           </div>
-          <p>For urgent matters, call us at:</p>
+          <p>{t("phone_p")}</p>
           <p>+1 (555) 000-0000</p>
           </div>
           <div className="contact-box">
@@ -69,7 +126,7 @@ const Contact: React.FC = () => {
                 <FiMapPin />
               </div>
             </IconContext.Provider>{" "}
-            <h3>Office</h3>
+            <h3>{t("office")}</h3>
           </div>
           <p>456 Great Ave, Melbourne VIC 3000 AU</p>
         </div>

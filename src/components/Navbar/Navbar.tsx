@@ -1,13 +1,32 @@
 import React, { useCallback, useEffect, useState } from "react";
 import { CgMenuRight } from "react-icons/cg";
 import { CgClose } from "react-icons/cg";
-
+import { useTranslation } from "react-i18next";
 import { IconContext } from "react-icons";
 import "./Navbar.css";
 
 const Navbar: React.FC = () => {
   const [screenWidth, setScreenWidth] = useState<number>(window.innerWidth);
   const [menuState, setMenuState] = useState<boolean>(false);
+  const [plcolor, setPlColor] = useState<string>("#969696");
+  const [encolor, setEnColor] = useState<string>("var(--text-color)");
+
+  const { t, i18n } = useTranslation();
+
+  const changeLanguage = (lng: string) => {
+    i18n.changeLanguage(lng);
+  };
+  const handleChangePl = () => {
+    changeLanguage("pl");
+    setPlColor("var(--text-color)");
+    setEnColor("#969696");
+  };
+  const handleChangeEn = () => {
+    changeLanguage("en");
+    setEnColor("var(--text-color)");
+    setPlColor("#969696");
+  };
+
   const clickMenu = () => {
     setMenuState(!menuState);
   };
@@ -41,7 +60,6 @@ const Navbar: React.FC = () => {
 
     if (scrollPosition >= 80) {
       navbar?.classList.add("scrolled");
-
     } else {
       navbar?.classList.remove("scrolled");
     }
@@ -54,17 +72,25 @@ const Navbar: React.FC = () => {
             <img className="pc-logo" src={"./gs-logo.svg"} />
             <div className="menu-elements">
               <p onClick={() => setMenuState(false)}>
-                <a href="#about">About Us</a>
+                <a href="#about">{t("nav_about")}</a>
               </p>
               <p onClick={() => setMenuState(false)}>
-                <a href="#education">Education</a>
+                <a href="#education">{t("nav_edu")}</a>
               </p>
               <p onClick={() => setMenuState(false)}>
-                <a href="#testimonials">Testimonials</a>
+                <a href="#testimonials">{t("nav_tes")}</a>
               </p>
               <p onClick={() => setMenuState(false)}>
-                <a href="#contact">Contact</a>
+                <a href="#contact">{t("contact")}</a>
               </p>
+            </div>
+            <div className="lang-btns">
+              <button style={{ color: plcolor }} onClick={handleChangePl}>
+                PL
+              </button>
+              <button style={{ color: encolor }} onClick={handleChangeEn}>
+                EN
+              </button>
             </div>
           </>
         ) : (
@@ -91,17 +117,25 @@ const Navbar: React.FC = () => {
                     </div>
                   </IconContext.Provider>
                   <p onClick={() => setMenuState(false)}>
-                    <a href="#about">About Us</a>
+                    <a href="#about">{t("nav_about")}</a>
                   </p>
                   <p onClick={() => setMenuState(false)}>
-                    <a href="#education">Education</a>
+                    <a href="#education">{t("nav_edu")}</a>
                   </p>
                   <p onClick={() => setMenuState(false)}>
-                    <a href="#testimonials">Testimonials</a>
+                    <a href="#testimonials">{t("nav_tes")}</a>
                   </p>
                   <p onClick={() => setMenuState(false)}>
-                    <a href="#contact">Contact</a>
+                    <a href="#contact">{t("contact")}</a>
                   </p>
+                  <div className="lang-btns-mobile">
+                  <button style={{ color: plcolor }} onClick={handleChangePl}>
+                    PL
+                  </button>
+                  <button style={{ color: encolor }} onClick={handleChangeEn}>
+                    EN
+                  </button>
+                </div>
                 </div>
               </>
             )}

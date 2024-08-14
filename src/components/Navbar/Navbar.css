@@ -17,10 +17,13 @@
     background-color: white;
     width: 100%;
     top: 0;
-
+    display: flex;
+    flex-direction: column;
 }
 .scrolled{
     background-color: white;
+    box-shadow: 0px 6px 24px -16px rgba(88, 88, 88, 1);
+
 }
 .navigation-mobile p {
     padding: 1rem 0;
@@ -40,7 +43,59 @@
     color: var(--olive);
 
 }
+.lang-btns{
+    margin-left: auto;
+}
 
+.lang-btns button:hover{
+    color: var(--olive);
+    transition: color 0.3s ease;
+} 
+.lang-btns button{
+    position: relative; 
+    border: none;
+    background: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--text-color);
+  }
+  
+  .lang-btns button::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 0;
+    color: var(--olive);
+    height: 2px; 
+    background-color: var(--olive) ;
+    transition: width 0.3s ease, left 0.3s ease; 
+  }
+  
+  .lang-btns button:hover::after {
+    width: 100%;
+    left: 0;
+    color: var(--dark-green); 
+  }
+  .lang-btns-mobile{
+    display: inline-grid;
+    padding-right: 1rem;
+    margin-top: auto;
+    padding-bottom: 9rem;
+    align-self: flex-end;
+
+  }
+  .lang-btns-mobile button{
+    border: none;
+    background: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-decoration: none;
+    color: var(--text-color);
+  }
+  
 .navbar{
     transition: background-color 0.3s ease;
     width:100vw;

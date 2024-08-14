@@ -5,12 +5,11 @@ import { IconContext } from "react-icons";
 import { FaSquareInstagram } from "react-icons/fa6";
 import { FaLinkedinIn } from "react-icons/fa";
 import { FaYoutube } from "react-icons/fa";
-
-
-
+import { useTranslation } from 'react-i18next';
 
 
 const Footer: React.FC = () => {
+  const {t, i18n} = useTranslation();
 
 return ( 
     <section className='footer'>
@@ -47,18 +46,18 @@ return (
         </IconContext.Provider>
             </div>
             <div className='shortcuts'>
-                <p>About Us</p>
-                <p>Services</p>
+                <p>{t("nav_about")}</p>
+                <p>{t("serv")}</p>
                 <p>Blog</p>
                 <p>FAQ</p>
-                <p>Contact</p>         
+                <p>{t("contact")}</p>         
             </div>
             <div className='line line2'></div>
         <div className='terms'>
-<p>Privacy Policy</p>
-<p>Cookie Policy</p>
-<p>Terms and Conditions</p>
-<p>© 2024 Green Solutions. All rights reserved.</p>
+<p>{t("priv")}</p>
+<p>{t("cook")}</p>
+<p>{t("terms")}</p>
+<p>{t("rights")}</p>
         </div>
     </section>
   );

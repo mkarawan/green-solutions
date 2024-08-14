@@ -1,7 +1,10 @@
 import React from "react";
 import "./Hero.css";
+import { useTranslation } from 'react-i18next';
 
 const Hero: React.FC = () => {
+  const { t, i18n } = useTranslation();
+
   return (
     <>
     <div className="background"></div>
@@ -9,14 +12,13 @@ const Hero: React.FC = () => {
       
     {/* <img className="shape" src={'./olive-shape.svg'} /> */}
 
-      <h1 className="hero-main">Leading the way towards a greener future</h1>
+      <h1 className="hero-main">{t('welcome_message')}</h1>
       <p>
-        At Green Solutions, we help clients adopt sustainable practices and
-        minimize environmental impact through our comprehensive services.
+        {t('hero_p')}
       </p>
       <div className="buttons">
-      <a href="#about"><button className="gradient-btn">Check us out</button></a>
-      <a href="#contact"><button className="border-btn">Contact us</button></a>
+      <a href="#about"><button className="gradient-btn">{t("btn_check")}</button></a>
+      <a href="#contact"><button className="border-btn">{t("contact")}</button></a>
       </div>
 
 
