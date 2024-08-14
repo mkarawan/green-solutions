@@ -90,7 +90,7 @@ const Testimonials: React.FC = () => {
               <p>
               {t("tes_1")}
               </p>
-              <img className="customer-img" src={"./michael.jpg"} />
+              <img className="customer-img"  alt="customer1"  src={"./michael.jpg"} />
               <p className="customer-name">Michael Smith</p>
             </div>
             <div className="card card2">
@@ -134,7 +134,7 @@ const Testimonials: React.FC = () => {
               <p>
               {t("tes_2")}
               </p>
-              <img className="customer-img" src={"./emily.jpg"} />
+              <img className="customer-img"   alt="customer2" src={"./emily.jpg"} />
               <p className="customer-name">Emily Johnson</p>
             </div>
             <div className="card card3">
@@ -178,7 +178,7 @@ const Testimonials: React.FC = () => {
               <p>
               {t("tes_3")}
               </p>
-              <img className="customer-img" src={"./jessica.jpg"} />
+              <img className="customer-img" alt="customer3" src={"./jessica.jpg"} />
               <p className="customer-name">Jessica Brown</p>
             </div>
           </div>
@@ -193,7 +193,7 @@ const Testimonials: React.FC = () => {
                 </div>
               </IconContext.Provider>
 
-              {cardID == 1 && (
+              {cardID === 1 && (
                 <div className="card card1 carousel-card">
                   <div className="stars">
                     <IconContext.Provider
@@ -235,11 +235,11 @@ const Testimonials: React.FC = () => {
                   <p>
                   {t("tes_1")}
                   </p>
-                  <img className="customer-img" src={"./michael.jpg"} />
+                  <img className="customer-img" alt="customer1"  src={"./michael.jpg"} />
                   <p className="customer-name">Michael Smith</p>
                 </div>
               )}
-              {cardID == 2 && (
+              {cardID === 2 && (
                 <div className="card card2">
                   <div className="stars">
                     <IconContext.Provider
@@ -281,11 +281,11 @@ const Testimonials: React.FC = () => {
                   <p>
                   {t("tes_2")}
                   </p>
-                  <img className="customer-img" src={"./emily.jpg"} />
+                  <img className="customer-img" alt="customer2" src={"./emily.jpg"} />
                   <p className="customer-name">Emily Johnson</p>
                 </div>
               )}
-              {cardID == 3 && (
+              {cardID === 3 && (
                 <div className="card card3">
                   <div className="stars">
                     <IconContext.Provider
@@ -327,7 +327,7 @@ const Testimonials: React.FC = () => {
                   <p>
                   {t("tes_3")}
                   </p>
-                  <img className="customer-img" src={"./jessica.jpg"} />
+                  <img className="customer-img" alt="customer3" src={"./jessica.jpg"} />
                   <p className="customer-name">Jessica Brown</p>
                 </div>
               )}

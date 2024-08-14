@@ -13,7 +13,7 @@ const Footer: React.FC = () => {
 
 return ( 
     <section className='footer'>
-    <img className="big-logo" src='./gs-big-logo.svg'/>
+    <img className="big-logo"  alt="gs-logo" src='./gs-big-logo.svg'/>
    
             <div className='social-media'>
             <IconContext.Provider

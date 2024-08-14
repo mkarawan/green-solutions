@@ -1,4 +1,4 @@
-import React, { useCallback, useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { CgMenuRight } from "react-icons/cg";
 import { CgClose } from "react-icons/cg";
 import { useTranslation } from "react-i18next";
@@ -69,7 +69,7 @@ const Navbar: React.FC = () => {
       <div className="navbar">
         {screenWidth >= 768 ? (
           <>
-            <img className="pc-logo" src={"./gs-logo.svg"} />
+            <img className="pc-logo" alt="gs-logo"  src={"./gs-logo.svg"} />
             <div className="menu-elements">
               <p onClick={() => setMenuState(false)}>
                 <a href="#about">{t("nav_about")}</a>
@@ -97,7 +97,7 @@ const Navbar: React.FC = () => {
           <>
             {!menuState ? (
               <>
-                <img src={"./gs-logo.svg"} />
+                <img alt="gs-logo"  src={"./gs-logo.svg"} />
                 <IconContext.Provider
                   value={{ color: "var(--dark-grey", size: "35px" }}
                 >

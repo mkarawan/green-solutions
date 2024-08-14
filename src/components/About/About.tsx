@@ -9,7 +9,7 @@ const About: React.FC = () => {
       <section id="about" className="about">
       
           <div className="our-mission">
-            <h2>{t("mission")}<img className="header-accent" src={"./green-accent.svg"} /></h2>
+            <h2>{t("mission")}<img alt="accent" className="header-accent" src={"./green-accent.svg"} /></h2>
            
           </div>
           <div className="layout">
@@ -33,12 +33,12 @@ const About: React.FC = () => {
           </ul>
           </div>
           <div className="div3">
-          <img className="graphic " src={"./audit.svg"} />
+          <img className="graphic" alt="audit"  src={"./audit.svg"} />
           </div>
           </div>
          
 
-          <img className="cream-shape" src={'./cream-shape.svg'} />
+          <img className="cream-shape"  alt="accent" src={'./cream-shape.svg'} />
 
       </section>
       <section className="transforming">
@@ -47,21 +47,21 @@ const About: React.FC = () => {
         </h2>
         <div className="layout-3col">
           <div>
-          <img className="graphic" src={"./audit2.png"} />
+          <img className="graphic" alt="graphic"  src={"./audit2.png"} />
           <h3 className="olive"> {t("trans_1h")}</h3>
           <p>
           {t("trans_1p")}
           </p>
         </div>
         <div>
-          <img className="graphic" src={"./waste.png"} />
+          <img className="graphic" alt="graphic"  src={"./waste.png"} />
           <h3 className="olive">{t("trans_2h")} </h3>
           <p>
           {t("trans_2p")}
           </p>
         </div>
         <div>
-          <img className="graphic" src={"./turbine.png"} />
+          <img className="graphic" alt="graphic"  src={"./turbine.png"} />
           <h3 className="olive">{t("trans_3h")}</h3>
           <p>
           {t("trans_3p")}
@@ -85,7 +85,7 @@ const About: React.FC = () => {
           <a href="#contact"><button className="gradient-btn centered-btn">{t("contact")}</button></a>
               </div>
          
-          <img className="graphic education-img" src={'./education.png'} />
+          <img className="graphic education-img" alt="education"  src={'./education.png'} />
           </div>
         
 
