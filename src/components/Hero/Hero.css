@@ -167,10 +167,12 @@ max-width: 50%;
     background-position: center;
   }
   .hero-main{
-    margin-top: 9rem;
-    font-size: 4rem;
-    max-width: 70%;
+
+    font-size: 5.5rem;
+    max-width: 80%;
+    margin-top: 6rem;
   }
+
 
   .buttons{
     padding-top: 3rem;
